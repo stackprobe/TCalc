@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<root>
+	<group name="エネルギー">
+		<unit name="カロリー" rate="860" default="1"/>
+		<unit name="キロカロリー" rate="0.86"/>
+		<unit name="ジュール" rate="3600" default="2"/>
+		<unit name="キロジュール" rate="3.6"/>
+		<unit name="フィート重量ポンド" rate="1.3558179483314004" ireci="3600"/>
+		<unit name="英式熱量単位(国際蒸気表)" reci="1055.05585262" ireci="3600"/>
+		<unit name="英式熱量単位(日本の計量法)" reci="1055.06" ireci="3600"/>
+		<unit name="英式熱量単位(イギリスの法定値)" reci="1055.05585257348" ireci="3600"/>
+		<unit name="ワット時" rate="1"/>
+		<unit name="キロワット時" rate="0.001"/>
+	</group>
+	<group name="圧力">
+		<unit name="パスカル" rate="1"/>
+		<unit name="ヘクトパスカル" reci="100" default="1"/>
+		<unit name="キロパスカル" reci="1000"/>
+		<unit name="バール" reci="100000"/>
+		<unit name="標準大気圧" reci="101325"/>
+		<unit name="重量ポンド毎平方インチ(PSI)" rate="0.0254" rate2="0.0254" reci="0.45359237" reci2="9.80665"/>
+		<unit name="重量ポンド毎平方インチ(日本の計量法)" reci="6894.76"/>
+		<unit name="水銀柱ミリメートル" rate="760" reci="101325" default="2"/>
+	</group>
+	<group name="温度">
+		<unit name="ケルビン" rate="1"/>
+		<unit name="摂氏" origin="-273.15" rate="1" default="1"/>
+		<unit name="華氏" origin="-459.67" rate="1.8" default="2"/>
+		<unit name="ランキン度" rate="1.8"/>
+	</group>
+	<group name="角度">
+		<unit name="度" rate="180" default="1"/>
+		<unit name="グラード" rate="200"/>
+		<unit name="ラジアン(2直角=円周率小数点以下105桁までで換算)"
+			rate="3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148"
+			default="2"
+			/>
+		<unit name="ミリラジアン・シュトリヒ(2直角=円周率小数点以下105桁までで換算)"
+			rate="3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148"
+			rate2="1000"
+			/>
+	</group>
+	<group name="時間">
+		<unit name="マイクロ秒" rate="1000000"/>
+		<unit name="ミリ秒" rate="1000"/>
+		<unit name="秒" rate="1" default="2"/>
+		<unit name="分" reci="60" default="1"/>
+		<unit name="時" reci="3600"/>
+		<unit name="日" reci="86400"/>
+		<unit name="週" reci="604800"/>
+		<unit name="月(30.5日)" reci="2635200"/>
+		<unit name="年(365.25日)" reci="31557600"/>
+		<unit name="世紀(36524.25日)" reci="3155695200"/>
+		<unit name="地球の年齢(45.4億年)" reci="143271504000000000"/>
+		<unit name="劫(100億年)" reci="315576000000000000"/>
+		<unit name="宇宙の年齢(137.98億年)" reci="435431764800000000"/>
+		<unit name="24Hz(映画のコマ数)の1周期" rate="24"/>
+		<unit name="30Hz(テレビのコマ数)の1周期" rate="30"/>
+		<unit name="50Hz(東日本の商用電源周波数)の1周期" rate="50"/>
+		<unit name="60Hz(西日本の商用電源周波数)の1周期" rate="60"/>
+		<unit name="刹那(阿毘達磨大毘婆沙論)" rate="75"/>
+		<unit name="怛刹那(阿毘達磨大毘婆沙論)" rate="75" reci="120"/>
+		<unit name="臘縛(阿毘達磨大毘婆沙論)" rate="75" reci="120" reci2="60"/>
+		<unit name="牟呼栗多(阿毘達磨大毘婆沙論)" rate="75" reci="120" reci2="1800"/>
+	</group>
+	<group name="長さ">
+		<unit name="オングストローム" rate="10000000000"/>
+		<unit name="マイクロメートル" rate="1000000"/>
+		<unit name="ミリメートル" rate="1000"/>
+		<unit name="センチメートル" rate="100"/>
+		<unit name="メートル" rate="1" default="1"/>
+		<unit name="キロメートル" rate="0.001"/>
+		<unit name="インチ" reci="0.0254" default="2"/>
+		<unit name="フィート(測量フィート)" rate="3937" reci="1200"/>
+		<unit name="フィート(国際フィート)" reci="0.3048"/>
+		<unit name="ヤード(国際ヤード)" reci="0.9144"/>
+		<unit name="マイル(国際マイルまたは測量マイル)" reci="1609.344"/>
+		<unit name="尺(日本)" rate="3.3"/>
+		<unit name="尺(中国)" rate="3"/>
+		<unit name="間" rate="0.55"/>
+		<unit name="町" rate="0.55" reci="60"/>
+		<unit name="里(日本)" rate="0.55" reci="2160"/>
+		<unit name="里(中国)" reci="500"/>
+		<unit name="海里(国際海里)" reci="1852"/>
+		<unit name="赤道の長さ(40,075キロメートル)" reci="40075000"/>
+		<unit name="地球から月までの距離(384,400キロメートル)" reci="384400000"/>
+		<unit name="地球から太陽までの距離(149,600,000キロメートル)" reci="149600000000"/>
+		<unit name="地球から火星までの距離(225,300,000キロメートル)" reci="225300000000"/>
+		<unit name="光年" reci="9460730472580800"/>
+		<unit name="銀河の直径(10万光年)" reci="946073047258080000000"/>
+		<unit name="ムサシ(15センチメートル)" rate="100" reci="15"/>
+	</group>
+	<group name="面積">
+		<unit name="平方センチメートル" rate="10000"/>
+		<unit name="平方メートル" rate="1" default="2"/>
+		<unit name="平方キロメートル" reci="1000000"/>
+		<unit name="平方インチ" reci="0.00064516"/>
+		<unit name="坪" rate="0.3025" default="1"/>
+		<unit name="畳(団地間 800mm×1600mm)" reci="1.28"/>
+		<unit name="畳(団地間 850mm×1700mm)" reci="1.445"/>
+		<unit name="畳(江戸間)" reci="1.5488"/>
+		<unit name="畳(中京間)" reci="1.6562"/>
+		<unit name="畳(京間)" reci="1.82405"/>
+		<unit name="アール" reci="100"/>
+		<unit name="ヘクタール" reci="10000"/>
+		<unit name="エーカー(アメリカ)" reci="62726400000" rate="15499969"/>
+		<unit name="エーカー(イギリス)" reci="4046.8564224"/>
+		<unit name="東京ドーム(46,755平方メートル)" reci="46755"/>
+		<unit name="北海道(83,424.22平方キロメートル)" reci="83424220000"/>
+		<unit name="日本(377,900平方キロメートル)" reci="377900000000"/>
+		<unit name="地球の表面積(510,072,000平方キロメートル)" reci="510072000000000"/>
+	</group>
+	<group name="体積">
+		<unit name="立方センチメートル" rate="1000000"/>
+		<unit name="立方メートル" rate="1" default="1"/>
+		<unit name="立方キロメートル" reci="1000000000"/>
+		<unit name="立方インチ" reci="0.000016387064" default="2"/>
+		<unit name="ミリリットル(1901年～1964年 日本)" rate="1000028"/>
+		<unit name="ミリリットル(1901年～1964年 アメリカ)" rate="1000029"/>
+		<unit name="ミリリットル(1964年以降)" rate="1000000"/>
+		<unit name="リットル(1901年～1964年 日本)" rate="1000.028"/>
+		<unit name="リットル(1901年～1964年 アメリカ)" rate="1000.029"/>
+		<unit name="リットル(1964年以降)" rate="1000"/>
+		<unit name="升(日本)" rate="1331000" reci="2401"/>
+		<unit name="升(中国)" rate="1000"/>
+		<unit name="合(日本)" rate="1331000" reci="2401" rate2="10"/>
+		<unit name="合(中国)" rate="10000"/>
+		<unit name="勺(日本)" rate="1331000" reci="2401" rate2="100"/>
+		<unit name="勺(中国)" rate="100000"/>
+		<unit name="英ガロン" rate="1000" reci="4.54609"/>
+		<unit name="米国液量ガロン" rate="1000" reci="3.785411784"/>
+		<unit name="米国乾量ガロン" rate="1000" reci="4.40488377086"/>
+		<unit name="英パイント" rate="1000" reci="4.54609" rate2="8"/>
+		<unit name="米国液量パイント" rate="1000" reci="3.785411784" rate2="8"/>
+		<unit name="米国乾量パイント" rate="1000" reci="4.40488377086" rate2="8"/>
+		<unit name="東京ドーム(124万立方メートル)" reci="1240000"/>
+	</group>
+	<group name="重さ">
+		<unit name="ミリグラム" rate="1000"/>
+		<unit name="グラム" rate="1"/>
+		<unit name="キログラム" reci="1000" default="1"/>
+		<unit name="トン" reci="1000000"/>
+		<unit name="ドラム" reci="28.349523125"/>
+		<unit name="常用オンス" reci="28.349523125"/>
+		<unit name="トロイオンス" reci="31.1034768"/>
+		<unit name="常用ポンド" reci="453.59237" default="2"/>
+		<unit name="トロイポンド" reci="373.2417216"/>
+		<unit name="貫" reci="3750"/>
+		<unit name="両" reci="37.5"/>
+		<unit name="匁" reci="3.75"/>
+		<unit name="分" reci="0.375"/>
+		<unit name="厘" reci="0.0375"/>
+		<unit name="斤" reci="600"/>
+	</group>
+	<group name="速さ">
+		<unit name="センチメートル毎秒" rate="100"/>
+		<unit name="センチメートル毎時" rate="360000"/>
+		<unit name="メートル毎秒" rate="1" default="2"/>
+		<unit name="メートル毎時" rate="3600"/>
+		<unit name="キロメートル毎秒" rate="0.001"/>
+		<unit name="キロメートル毎時" rate="3.6"/>
+		<unit name="マイル毎秒" rate="1" reci="1609.344"/>
+		<unit name="マイル毎時" rate="3600" reci="1609.344"/>
+		<unit name="ノット" rate="3600" reci="1852"/>
+		<unit name="音速(時速1,225キロメートル)" rate="3.6" reci="1225" default="1"/>
+		<unit name="光速" reci="299792458"/>
+		<unit name="桜の花の落ちるスピード(秒速5センチメートル)" rate="20"/>
+	</group>
+	<group name="情報量(コンピュータ)">
+		<unit name="ビット" rate="8"/>
+		<unit name="バイト" rate="1" default="2"/>
+		<unit name="キロバイト(KB)" reci="1e+3"/>
+		<unit name="メガバイト(MB)" reci="1e+6"/>
+		<unit name="ギガバイト(GB)" reci="1e+9"/>
+		<unit name="テラバイト(TB)" reci="1e+12"/>
+		<unit name="ペタバイト(PB)" reci="1e+15"/>
+		<unit name="エクサバイト(EB)" reci="1e+18"/>
+		<unit name="ゼタバイト(ZB)" reci="1e+21"/>
+		<unit name="ヨタバイト(YB)" reci="1e+24"/>
+		<unit name="キビバイト(KiB)" reci="1024" default="1"/>
+		<unit name="メビバイト(MiB)" reci="1048576"/>
+		<unit name="ギビバイト(GiB)" reci="1073741824"/>
+		<unit name="テビバイト(TiB)" reci="1099511627776"/>
+		<unit name="ペビバイト(PiB)" reci="1125899906842624"/>
+		<unit name="エクスビバイト(EiB)" reci="1152921504606846976"/>
+		<unit name="ゼビバイト(ZiB)" reci="1180591620717411303424"/>
+		<unit name="ヨビバイト(YiB)" reci="1208925819614629174706176"/>
+	</group>
+</root>
