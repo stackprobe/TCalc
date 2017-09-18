@@ -42,8 +42,17 @@ namespace WTCalc
 
 			// べき乗も Keisan.exe の方が速いみたいだけど、TCalc.exe は桁数オーバーフローの処理が入ってるので、P は TCalc でやる！
 
-			if (enzanshi != "R")
-				return false;
+			if (
+				//enzanshi == "P" ||
+				enzanshi == "R"
+				)
+			{
+				// Keisan.cs でやる。
+			}
+			else
+			{
+				return false; // TCalc.cs に送る。
+			}
 
 			Directory.CreateDirectory(this.TempDir);
 			File.WriteAllLines(
