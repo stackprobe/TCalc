@@ -91,7 +91,7 @@ namespace WTCalc
 		public static string ReplaceSet(string str, string oldChrSet, string newChrSet)
 		{
 			for (int index = 0; index < oldChrSet.Length; index++)
-				str = str.Replace(oldChrSet[index], newChrSet[index]);
+				str = str.Replace(oldChrSet[index], newChrSet[index % newChrSet.Length]);
 
 			return str;
 		}
