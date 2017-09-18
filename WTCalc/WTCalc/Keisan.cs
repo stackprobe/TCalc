@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace WTCalc
 {
-	public class Keisan
+	public class Keisan : TCalcBase
 	{
 		private string TempDir;
 		private string ParamsFile;
@@ -28,17 +28,22 @@ namespace WTCalc
 
 		private Process Proc;
 
-		public void Start(string operand1, string enzanshi, string operand2)
+		public override bool Start(string operand1, string enzanshi, string operand2)
 		{
 			if (this.IsRunning())
-				return;
+				return false;
 
 			if (
 				string.IsNullOrEmpty(operand1) ||
 				string.IsNullOrEmpty(enzanshi) ||
 				string.IsNullOrEmpty(operand2)
 				)
-				return;
+				return false;
+
+			// べき乗も Keisan.exe の方が速いみたいだけど、TCalc.exe は桁数オーバーフローの処理が入ってるので、P は TCalc でやる！
+
+			if (enzanshi != "R")
+				return false;
 
 			Directory.CreateDirectory(this.TempDir);
 			File.WriteAllLines(
@@ -65,11 +70,13 @@ namespace WTCalc
 			psi.UseShellExecute = false;
 
 			this.Proc = Process.Start(psi);
+
+			return true;
 		}
 
 		private bool FinishedFlag;
 
-		public bool IsRunning()
+		public override bool IsRunning()
 		{
 			if (this.Proc != null)
 			{
@@ -82,7 +89,7 @@ namespace WTCalc
 			return this.Proc != null;
 		}
 
-		public bool IsFinished(bool flagKeep = false)
+		public override bool IsFinished(bool flagKeep = false)
 		{
 			if (this.IsRunning() == false && this.FinishedFlag)
 			{
@@ -99,7 +106,7 @@ namespace WTCalc
 			Directory.Delete(this.TempDir);
 		}
 
-		public void ForceExit()
+		public override void ForceExit()
 		{
 			if (this.IsRunning() == false)
 				return;
@@ -117,7 +124,7 @@ namespace WTCalc
 			this.Cleanup();
 		}
 
-		public string GetAnswer()
+		public override string GetAnswer()
 		{
 			if (this.IsFinished() == false)
 				return null;

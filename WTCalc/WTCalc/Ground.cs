@@ -21,9 +21,7 @@ namespace WTCalc
 		public readonly string INT_OPERAND_SUFFIX = " (10)";
 
 		public MainWin MW;
-		public TCalc CP;
-		public Keisan KP;
-		public Keisan2 K2;
+		public TCalcBase[] TCalcs;
 
 		public int Radix = 10;
 		public int Basement = 30;

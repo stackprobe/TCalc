@@ -169,7 +169,7 @@ namespace WTCalc
 				this.AddEnzanshi("\n=\n");
 				this.AddAnswer(Gnd.I.Answer.GetValueForUi());
 			}
-			if (Gnd.I.CP.IsRunning() || Gnd.I.KP.IsRunning() || Gnd.I.K2.IsRunning())
+			if (Gnd.I.TCalcs.Any(tc => tc.IsRunning()))
 			{
 				this.AddEnzanshi("\nCalculating...");
 			}

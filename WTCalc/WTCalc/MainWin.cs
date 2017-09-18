@@ -24,9 +24,12 @@ namespace WTCalc
 			InitializeComponent();
 
 			Gnd.I.MW = this;
-			Gnd.I.CP = new TCalc();
-			Gnd.I.KP = new Keisan();
-			Gnd.I.K2 = new Keisan2();
+			Gnd.I.TCalcs = new TCalcBase[]
+			{
+				new Keisan2(), // K2
+				new Keisan(),  // KP
+				new TCalc(),   // CP
+			};
 			this.RTM = new RichTextMan(this.DisplayArea);
 			this.RTM.Clear();
 
@@ -175,14 +178,15 @@ namespace WTCalc
 				if (this.MT_Count == 0)
 					this.BtnEq.Focus();
 
-				string answer = Gnd.I.CP.GetAnswer();
+				string answer = null;
 
-				if (answer == null)
-					answer = Gnd.I.KP.GetAnswer();
+				foreach (TCalcBase tc in Gnd.I.TCalcs)
+				{
+					answer = tc.GetAnswer();
 
-				if (answer == null)
-					answer = Gnd.I.K2.GetAnswer();
-
+					if (answer != null)
+						break;
+				}
 				if (answer != null)
 				{
 					this.DABC = RTB_背景色_Default;
@@ -268,15 +272,9 @@ namespace WTCalc
 
 			this.DABC = RTB_背景色_計算中;
 
-			if (Gnd.I.K2.Start(operand1, enzanshi, operand2))
-				return;
-
-			// べき乗も Keisan.exe の方が速いみたいだけど、TCalc.exe は桁数オーバーフローの処理が入ってるので、P は TCalc でやる！
-
-			if (enzanshi == "R")
-				Gnd.I.KP.Start(operand1, enzanshi, operand2);
-			else
-				Gnd.I.CP.Start(operand1, enzanshi, operand2);
+			foreach (TCalcBase tc in Gnd.I.TCalcs)
+				if (tc.Start(operand1, enzanshi, operand2))
+					break;
 		}
 
 		private string SouthMessage = null;
@@ -302,7 +300,7 @@ namespace WTCalc
 				{
 					this.Status.Text += " [M]";
 				}
-				if (Gnd.I.CP.IsRunning() || Gnd.I.KP.IsRunning() || Gnd.I.K2.IsRunning())
+				if (Gnd.I.TCalcs.Any(tc => tc.IsRunning()))
 				{
 					this.Status.Text += " [計算中]";
 				}
@@ -400,9 +398,9 @@ namespace WTCalc
 
 		private void 中止AToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			Gnd.I.CP.ForceExit();
-			Gnd.I.KP.ForceExit();
-			Gnd.I.K2.ForceExit();
+			foreach (TCalcBase tc in Gnd.I.TCalcs)
+				tc.ForceExit();
+
 			this.クリア();
 			this.RefreshUi();
 		}
@@ -416,10 +414,10 @@ namespace WTCalc
 			if (this.MT_Busy) // 2bs
 				return true;
 
-			if (Gnd.I.CP.IsRunning() || Gnd.I.KP.IsRunning() || Gnd.I.K2.IsRunning())
+			if (Gnd.I.TCalcs.Any(tc => tc.IsRunning()))
 				return true;
 
-			if (Gnd.I.CP.IsFinished(true) || Gnd.I.KP.IsFinished(true) || Gnd.I.K2.IsFinished(true))
+			if (Gnd.I.TCalcs.Any(tc => tc.IsFinished(true)))
 				return true;
 
 			return false;

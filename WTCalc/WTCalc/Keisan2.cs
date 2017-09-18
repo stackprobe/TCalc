@@ -6,9 +6,9 @@ using System.Threading;
 
 namespace WTCalc
 {
-	public class Keisan2
+	public class Keisan2 : TCalcBase
 	{
-		public bool Start(string operand1, string enzanshi, string operand2) // ret: ? 開始した。
+		public override bool Start(string operand1, string enzanshi, string operand2) // ret: ? 開始した。
 		{
 			if ((
 				(ToFormat(operand1) == "9" && operand1.Length <= 9) ||
@@ -60,7 +60,7 @@ namespace WTCalc
 			this.AnswerEnabled = true;
 		}
 
-		public string GetAnswer()
+		public override string GetAnswer()
 		{
 			if (this.AnswerEnabled)
 			{
@@ -70,17 +70,17 @@ namespace WTCalc
 			return null;
 		}
 
-		public void ForceExit()
+		public override void ForceExit()
 		{
 			// noop
 		}
 
-		public bool IsRunning()
+		public override bool IsRunning()
 		{
 			return false;
 		}
 
-		public bool IsFinished(bool flagKeep = false)
+		public override bool IsFinished(bool flagKeep = false)
 		{
 			if (this.AnswerEnabled)
 			{

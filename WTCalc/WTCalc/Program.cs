@@ -49,9 +49,8 @@ namespace WTCalc
 
 				// ログオフ・シャットダウン時ここまで来ない！
 
-				Gnd.I.CP.ForceExit();
-				Gnd.I.KP.ForceExit();
-				Gnd.I.K2.ForceExit();
+				foreach (TCalcBase tc in Gnd.I.TCalcs)
+					tc.ForceExit();
 
 				Gnd.I.Save();
 

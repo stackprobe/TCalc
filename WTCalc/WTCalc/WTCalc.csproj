@@ -88,6 +88,7 @@
     <Compile Include="RichTextMan.cs" />
     <Compile Include="SystemTools.cs" />
     <Compile Include="Keisan.cs" />
+    <Compile Include="TCalcBase.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitTh.cs" />
     <Compile Include="UnitWin.cs">

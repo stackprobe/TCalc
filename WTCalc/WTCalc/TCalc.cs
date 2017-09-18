@@ -7,7 +7,7 @@ using System.IO;
 
 namespace WTCalc
 {
-	public class TCalc
+	public class TCalc : TCalcBase
 	{
 		private string TempDir;
 		private string Operand1File;
@@ -29,17 +29,17 @@ namespace WTCalc
 
 		private Process Proc;
 
-		public void Start(string operand1, string enzanshi, string operand2)
+		public override bool Start(string operand1, string enzanshi, string operand2)
 		{
 			if (this.IsRunning())
-				return;
+				return false;
 
 			if (
 				string.IsNullOrEmpty(operand1) ||
 				string.IsNullOrEmpty(enzanshi) ||
 				string.IsNullOrEmpty(operand2)
 				)
-				return;
+				return false;
 
 			Directory.CreateDirectory(this.TempDir);
 			File.WriteAllText(this.Operand1File, operand1, Encoding.ASCII);
@@ -63,11 +63,13 @@ namespace WTCalc
 			psi.UseShellExecute = false;
 
 			this.Proc = Process.Start(psi);
+
+			return true;
 		}
 
 		private bool FinishedFlag;
 
-		public bool IsRunning()
+		public override bool IsRunning()
 		{
 			if (this.Proc != null)
 			{
@@ -80,7 +82,7 @@ namespace WTCalc
 			return this.Proc != null;
 		}
 
-		public bool IsFinished(bool flagKeep = false)
+		public override bool IsFinished(bool flagKeep = false)
 		{
 			if (this.IsRunning() == false && this.FinishedFlag)
 			{
@@ -98,7 +100,7 @@ namespace WTCalc
 			Directory.Delete(this.TempDir);
 		}
 
-		public void ForceExit()
+		public override void ForceExit()
 		{
 			if (this.IsRunning() == false)
 				return;
@@ -115,7 +117,7 @@ namespace WTCalc
 			this.Cleanup();
 		}
 
-		public string GetAnswer()
+		public override string GetAnswer()
 		{
 			if (this.IsFinished() == false)
 				return null;
