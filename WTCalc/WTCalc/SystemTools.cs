@@ -50,6 +50,12 @@ namespace WTCalc
 		public static void WL_Start()
 		{
 			WL_Enabled = true;
+			WriteLog("ログ出力を開始しました。");
+		}
+
+		public static void WL_End()
+		{
+			WL_Enabled = false;
 			File.Delete(GetLogFile());
 		}
 
@@ -62,14 +68,10 @@ namespace WTCalc
 
 				lock (SYNCROOT)
 				{
-					if (1000 < WL_Count)
-						return;
-
-					using (StreamWriter sw = new StreamWriter(GetLogFile(), true, StringTools.ENCODING_SJIS))
+					using (StreamWriter writer = new StreamWriter(GetLogFile(), WL_Count++ % 1000 != 0, StringTools.ENCODING_SJIS))
 					{
-						sw.WriteLine("[" + DateTime.Now + "." + WL_Count + "] " + e);
+						writer.WriteLine("[" + DateTime.Now + "." + WL_Count.ToString("D3") + "] " + e);
 					}
-					WL_Count++;
 				}
 			}
 			catch
@@ -96,6 +98,42 @@ namespace WTCalc
 			{
 				CT_Count++;
 			}
+		}
+
+		public static void AntiWindowsDefenderSmartScreen()
+		{
+			WriteLog("awdss_1");
+
+			if (Gnd.I.Is初回起動())
+			{
+				WriteLog("awdss_2");
+
+				foreach (string exeFile in Directory.GetFiles(BootTools.SelfDir, "*.exe", SearchOption.TopDirectoryOnly))
+				{
+					try
+					{
+						WriteLog("awdss_exeFile: " + exeFile);
+
+						if (exeFile.ToLower() == BootTools.SelfFile.ToLower())
+						{
+							WriteLog("awdss_self_noop");
+						}
+						else
+						{
+							byte[] exeData = File.ReadAllBytes(exeFile);
+							File.Delete(exeFile);
+							File.WriteAllBytes(exeFile, exeData);
+						}
+						WriteLog("awdss_OK");
+					}
+					catch (Exception e)
+					{
+						WriteLog(e);
+					}
+				}
+				WriteLog("awdss_3");
+			}
+			WriteLog("awdss_4");
 		}
 	}
 }

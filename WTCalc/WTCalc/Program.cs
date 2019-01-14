@@ -37,6 +37,8 @@ namespace WTCalc
 				SystemTools.WriteLog("LOG_TEST_03");
 #endif
 
+				SystemTools.AntiWindowsDefenderSmartScreen();
+
 				Gnd.I.Load();
 
 				// orig >
@@ -53,6 +55,8 @@ namespace WTCalc
 					tc.ForceExit();
 
 				Gnd.I.Save();
+
+				SystemTools.WL_End();
 
 				GlobalProcMtx.Release();
 				procMtx.ReleaseMutex();

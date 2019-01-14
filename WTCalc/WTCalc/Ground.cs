@@ -96,6 +96,11 @@ namespace WTCalc
 			}
 		}
 
+		public bool Is初回起動()
+		{
+			return File.Exists(SaveDataFile) == false; // ? Save()未実行
+		}
+
 		public Unit.GroupList _unitGroupList;
 
 		public Unit.GroupList UnitGroupList

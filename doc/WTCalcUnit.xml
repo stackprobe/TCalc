@@ -163,7 +163,6 @@
 		<unit name="ノット" rate="3600" reci="1852"/>
 		<unit name="音速(時速1,225キロメートル)" rate="3.6" reci="1225" default="1"/>
 		<unit name="光速" reci="299792458"/>
-		<unit name="桜の花の落ちるスピード(秒速5センチメートル)" rate="20"/>
 	</group>
 	<group name="情報量(コンピュータ)">
 		<unit name="ビット" rate="8"/>
