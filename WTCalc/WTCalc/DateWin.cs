@@ -49,6 +49,8 @@ namespace WTCalc
 
 			this.BgnYText.Focus();
 
+			SystemTools.PostShown(this);
+
 			this.MT_Enabled = true;
 		}
 

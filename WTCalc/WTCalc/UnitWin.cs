@@ -54,6 +54,10 @@ namespace WTCalc
 			this.Top -= 50;
 			this.Height += 100;
 
+			this.TBInput.Focus();
+
+			SystemTools.PostShown(this);
+
 			this.MT_Enabled = true;
 		}
 
