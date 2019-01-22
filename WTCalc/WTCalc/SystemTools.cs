@@ -100,6 +100,8 @@ namespace WTCalc
 			}
 		}
 
+		// sync > @ AntiWindowsDefenderSmartScreen
+
 		public static void AntiWindowsDefenderSmartScreen()
 		{
 			WriteLog("awdss_1");
@@ -135,6 +137,10 @@ namespace WTCalc
 			}
 			WriteLog("awdss_4");
 		}
+
+		// < sync
+
+		// sync > @ PostShown
 
 		public static void PostShown(Form f)
 		{
@@ -182,5 +188,7 @@ namespace WTCalc
 				}
 			}
 		}
+
+		// < sync
 	}
 }
