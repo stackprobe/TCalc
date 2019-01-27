@@ -106,7 +106,7 @@ namespace WTCalc
 		{
 			WriteLog("awdss_1");
 
-			if (Gnd.I.Is初回起動())
+			if (Is初回起動())
 			{
 				WriteLog("awdss_2");
 
@@ -140,6 +140,11 @@ namespace WTCalc
 
 		// < sync
 
+		public static bool Is初回起動()
+		{
+			return Gnd.I.Is初回起動();
+		}
+
 		// sync > @ PostShown
 
 		public static void PostShown(Form f)
@@ -166,6 +171,13 @@ namespace WTCalc
 						{
 							controlTable.Add(tp.Controls);
 						}
+					}
+					SplitContainer sc = control as SplitContainer;
+
+					if (sc != null)
+					{
+						controlTable.Add(sc.Panel1.Controls);
+						controlTable.Add(sc.Panel2.Controls);
 					}
 					TextBox tb = control as TextBox;
 
