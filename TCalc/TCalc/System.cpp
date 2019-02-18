@@ -188,6 +188,7 @@ char *makeTempPath(char *suffix)
 	error(); // unimpl
 	return NULL;
 }
+#if 0 // not using
 char *makeTempFile(char *suffix)
 {
 	char *out = makeTempPath(suffix);
@@ -200,6 +201,7 @@ char *makeTempDir(char *suffix)
 	createDir(out);
 	return out;
 }
+#endif
 
 time_t now(void)
 {

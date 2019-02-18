@@ -134,83 +134,7 @@ void unaddCwd(void)
 	setCwd_x(GetCwdStack()->UnaddElement());
 }
 
-// sync > @ My_mkdir
-
-static void My_mkdir_WrLog(char *message)
-{
-#if 0
-	char *logFile = xcout("%s_MKDIR.log", getSelfFile());
-	FILE *logFp;
-
-	logFp = fileOpen(logFile, "at");
-	writeLine(logFp, message);
-	fileClose(logFp);
-
-	memFree(logFile);
-#endif
-}
-static void My_mkdir_WrLog_x(char *message)
-{
-	My_mkdir_WrLog(message);
-	memFree(message);
-}
-static int My_mkdir(char *dir) // ret: ? Ž¸”s
-{
-#if 1
-	if(CreateDirectory(dir, NULL) == 0) // ? Ž¸”s
-	{
-		My_mkdir_WrLog_x(xcout("CreateDirectory() failed \"%s\" %u @ %I64d", dir, GetLastError(), time(NULL)));
-
-		Sleep(100);
-
-		for(int c = 0; ; c++)
-		{
-			My_mkdir_WrLog("*1");
-
-			if(existDir(dir))
-				break;
-
-			My_mkdir_WrLog("*2");
-
-			if(5 <= c)
-			{
-				My_mkdir_WrLog("*2.5");
-				return 1;
-			}
-			My_mkdir_WrLog("*3");
-
-			Sleep(100);
-
-			{
-				char *command = xcout("MD \"%s\"", dir);
-				system(command);
-				memFree(command);
-			}
-
-			Sleep(100);
-
-			My_mkdir_WrLog("*4");
-		}
-		My_mkdir_WrLog("*5");
-	}
-	return 0;
-#elif 1
-	if(CreateDirectory(dir, NULL) == 0) // ? Ž¸”s
-	{
-		return 1;
-	}
-	return 0;
-#else
-	if(_mkdir(dir)) // ? Ž¸”s
-	{
-		return 1;
-	}
-	return 0;
-#endif
-}
-
-// < sync
-
+#if 0 // not using
 void createFile(char *file)
 {
 	errorCase(m_isEmpty(file));
@@ -221,6 +145,7 @@ void createDir(char *dir)
 	errorCase(m_isEmpty(dir));
 	errorCase(My_mkdir(dir)); // ? Ž¸”s
 }
+#endif
 
 void removeFile(char *file)
 {
