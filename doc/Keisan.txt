@@ -176,18 +176,3 @@ BigIntモード
 
 		> Keisan.exe /h 3 p a0
 
-
-----
-ソースコード
-
-	1. GitHub
-
-		https://github.com/stackprobe/Factory/blob/master/Program/TCalc/Keisan.c
-
-	2. アーカイブ
-
-		以下の場所からダウンロードできます。
-		当該コードは <Factory.zip>\Program\TCalc\Keisan.c から辿って下さい。
-
-		http://stackprobe.dip.jp/_kit/Factory
-
