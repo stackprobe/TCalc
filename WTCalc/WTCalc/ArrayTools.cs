@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WTCalc
 {
-	public class ArrayTools
+	public static class ArrayTools
 	{
 		public static List<T> ShallowCopy<T>(List<T> src)
 		{

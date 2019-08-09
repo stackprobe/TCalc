@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WTCalc
 {
-	public class IntTools
+	public static class IntTools
 	{
 		public const int IMAX = 1000000000;
 

@@ -9,7 +9,7 @@ using System.Threading;
 
 namespace WTCalc
 {
-	public class SystemTools
+	public static class SystemTools
 	{
 		public static void ShowOverflow()
 		{

@@ -7,7 +7,7 @@ using System.Threading;
 
 namespace WTCalc
 {
-	public class FileTools
+	public static class FileTools
 	{
 		public static string[] TryReadAllLines(string file, Encoding encoding)
 		{

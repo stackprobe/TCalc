@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace WTCalc
 {
-	public class WordWrapOffTools
+	public static class WordWrapOffTools
 	{
 		private const int EM_SETWORDBREAKPROC = 0x00D0;
 		private delegate int EditWordBreakProc(IntPtr lpch, int ichCurrent, int cch, int code);
