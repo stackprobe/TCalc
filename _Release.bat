@@ -9,4 +9,4 @@ C:\Factory\SubTools\EmbedConfig.exe --factory-dir-disabled out\Keisan.exe
 
 C:\Factory\SubTools\zip.exe /O out TCalc
 
-PAUSE
+IF NOT "%1" == "/-P" PAUSE
