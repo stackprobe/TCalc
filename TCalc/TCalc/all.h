@@ -9,7 +9,6 @@
 #include "File.h"
 #include "FileStream.h"
 #include "Tools.h"
-#include "Kernel.h"
 #include "Mutex.h"
 #include "FileList.h"
 
