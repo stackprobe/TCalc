@@ -309,7 +309,7 @@ char *makeFairLocalPath(char *localPath)
 
 		for(char *p = node; *p; p++)
 		{
-			if(_ismbblead(p[0]) && _ismbbtrail(p[1])) // fixme
+			if(_ismbblead(p[0]) && _ismbbtrail(p[1])) // todo
 //			if(isJChar(p))
 			{
 				p++;

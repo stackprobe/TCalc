@@ -125,7 +125,7 @@ namespace WTCalc
 			}
 			catch //(Exception e)
 			{
-				//SystemTools.WriteLog(e); // FIXME 通常でも出る。
+				//SystemTools.WriteLog(e); // todo 通常でも出る。
 			}
 		}
 
