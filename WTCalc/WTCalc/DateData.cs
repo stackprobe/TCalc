@@ -40,7 +40,7 @@ namespace WTCalc
 
 		public int GetWeekDay()
 		{
-			return int.Parse(_calc.Mod(_day, _calc.FromInt(7)).ToString()); // todo
+			return int.Parse(_calc.Mod(_day, _calc.FromInt(7)).ToString()); // HACK
 		}
 
 		public string GetJWeekDay()
