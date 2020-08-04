@@ -125,7 +125,7 @@ namespace WTCalc
 			}
 			catch //(Exception e)
 			{
-				//SystemTools.WriteLog(e); // HACK 通常でも出る。
+				//SystemTools.WriteLog(e); // HACK: 通常でも出る。
 			}
 		}
 
