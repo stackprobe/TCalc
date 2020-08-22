@@ -126,7 +126,7 @@
             this.ツールTToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(377, 26);
+			this.menuStrip1.Size = new System.Drawing.Size(377, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -135,13 +135,13 @@
 			this.アプリケーションAToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.終了XToolStripMenuItem});
 			this.アプリケーションAToolStripMenuItem.Name = "アプリケーションAToolStripMenuItem";
-			this.アプリケーションAToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+			this.アプリケーションAToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
 			this.アプリケーションAToolStripMenuItem.Text = "アプリケーション(&A)";
 			// 
 			// 終了XToolStripMenuItem
 			// 
 			this.終了XToolStripMenuItem.Name = "終了XToolStripMenuItem";
-			this.終了XToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+			this.終了XToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
 			this.終了XToolStripMenuItem.Text = "終了(&X)";
 			this.終了XToolStripMenuItem.Click += new System.EventHandler(this.終了XToolStripMenuItem_Click);
 			// 
@@ -151,7 +151,7 @@
             this.基数RToolStripMenuItem,
             this.精度BToolStripMenuItem});
 			this.設定SToolStripMenuItem.Name = "設定SToolStripMenuItem";
-			this.設定SToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
+			this.設定SToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
 			this.設定SToolStripMenuItem.Text = "設定(&S)";
 			// 
 			// 基数RToolStripMenuItem
@@ -173,111 +173,111 @@
             this.進15ToolStripMenuItem,
             this.進16ToolStripMenuItem});
 			this.基数RToolStripMenuItem.Name = "基数RToolStripMenuItem";
-			this.基数RToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+			this.基数RToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
 			this.基数RToolStripMenuItem.Text = "基数(&R)";
 			// 
 			// 進02ToolStripMenuItem
 			// 
 			this.進02ToolStripMenuItem.Name = "進02ToolStripMenuItem";
-			this.進02ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進02ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進02ToolStripMenuItem.Text = "2進(&B)";
 			this.進02ToolStripMenuItem.Click += new System.EventHandler(this.進02ToolStripMenuItem_Click);
 			// 
 			// 進03ToolStripMenuItem
 			// 
 			this.進03ToolStripMenuItem.Name = "進03ToolStripMenuItem";
-			this.進03ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進03ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進03ToolStripMenuItem.Text = "3進";
 			this.進03ToolStripMenuItem.Click += new System.EventHandler(this.進03ToolStripMenuItem_Click);
 			// 
 			// 進04ToolStripMenuItem
 			// 
 			this.進04ToolStripMenuItem.Name = "進04ToolStripMenuItem";
-			this.進04ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進04ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進04ToolStripMenuItem.Text = "4進";
 			this.進04ToolStripMenuItem.Click += new System.EventHandler(this.進04ToolStripMenuItem_Click);
 			// 
 			// 進05ToolStripMenuItem
 			// 
 			this.進05ToolStripMenuItem.Name = "進05ToolStripMenuItem";
-			this.進05ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進05ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進05ToolStripMenuItem.Text = "5進";
 			this.進05ToolStripMenuItem.Click += new System.EventHandler(this.進05ToolStripMenuItem_Click);
 			// 
 			// 進06ToolStripMenuItem
 			// 
 			this.進06ToolStripMenuItem.Name = "進06ToolStripMenuItem";
-			this.進06ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進06ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進06ToolStripMenuItem.Text = "6進";
 			this.進06ToolStripMenuItem.Click += new System.EventHandler(this.進06ToolStripMenuItem_Click);
 			// 
 			// 進07ToolStripMenuItem
 			// 
 			this.進07ToolStripMenuItem.Name = "進07ToolStripMenuItem";
-			this.進07ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進07ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進07ToolStripMenuItem.Text = "7進";
 			this.進07ToolStripMenuItem.Click += new System.EventHandler(this.進07ToolStripMenuItem_Click);
 			// 
 			// 進08ToolStripMenuItem
 			// 
 			this.進08ToolStripMenuItem.Name = "進08ToolStripMenuItem";
-			this.進08ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進08ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進08ToolStripMenuItem.Text = "8進(&O)";
 			this.進08ToolStripMenuItem.Click += new System.EventHandler(this.進08ToolStripMenuItem_Click);
 			// 
 			// 進09ToolStripMenuItem
 			// 
 			this.進09ToolStripMenuItem.Name = "進09ToolStripMenuItem";
-			this.進09ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進09ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進09ToolStripMenuItem.Text = "9進";
 			this.進09ToolStripMenuItem.Click += new System.EventHandler(this.進09ToolStripMenuItem_Click);
 			// 
 			// 進10ToolStripMenuItem
 			// 
 			this.進10ToolStripMenuItem.Name = "進10ToolStripMenuItem";
-			this.進10ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進10ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進10ToolStripMenuItem.Text = "10進(&D)";
 			this.進10ToolStripMenuItem.Click += new System.EventHandler(this.進10ToolStripMenuItem_Click);
 			// 
 			// 進11ToolStripMenuItem
 			// 
 			this.進11ToolStripMenuItem.Name = "進11ToolStripMenuItem";
-			this.進11ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進11ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進11ToolStripMenuItem.Text = "11進";
 			this.進11ToolStripMenuItem.Click += new System.EventHandler(this.進11ToolStripMenuItem_Click);
 			// 
 			// 進12ToolStripMenuItem
 			// 
 			this.進12ToolStripMenuItem.Name = "進12ToolStripMenuItem";
-			this.進12ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進12ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進12ToolStripMenuItem.Text = "12進";
 			this.進12ToolStripMenuItem.Click += new System.EventHandler(this.進12ToolStripMenuItem_Click);
 			// 
 			// 進13ToolStripMenuItem
 			// 
 			this.進13ToolStripMenuItem.Name = "進13ToolStripMenuItem";
-			this.進13ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進13ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進13ToolStripMenuItem.Text = "13進";
 			this.進13ToolStripMenuItem.Click += new System.EventHandler(this.進13ToolStripMenuItem_Click);
 			// 
 			// 進14ToolStripMenuItem
 			// 
 			this.進14ToolStripMenuItem.Name = "進14ToolStripMenuItem";
-			this.進14ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進14ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進14ToolStripMenuItem.Text = "14進";
 			this.進14ToolStripMenuItem.Click += new System.EventHandler(this.進14ToolStripMenuItem_Click);
 			// 
 			// 進15ToolStripMenuItem
 			// 
 			this.進15ToolStripMenuItem.Name = "進15ToolStripMenuItem";
-			this.進15ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進15ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進15ToolStripMenuItem.Text = "15進";
 			this.進15ToolStripMenuItem.Click += new System.EventHandler(this.進15ToolStripMenuItem_Click);
 			// 
 			// 進16ToolStripMenuItem
 			// 
 			this.進16ToolStripMenuItem.Name = "進16ToolStripMenuItem";
-			this.進16ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.進16ToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
 			this.進16ToolStripMenuItem.Text = "16進(&H)";
 			this.進16ToolStripMenuItem.Click += new System.EventHandler(this.進16ToolStripMenuItem_Click);
 			// 
@@ -291,48 +291,48 @@
             this.桁300ToolStripMenuItem,
             this.桁1000ToolStripMenuItem});
 			this.精度BToolStripMenuItem.Name = "精度BToolStripMenuItem";
-			this.精度BToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+			this.精度BToolStripMenuItem.Size = new System.Drawing.Size(221, 22);
 			this.精度BToolStripMenuItem.Text = "精度_小数点以下？桁まで(&B)";
 			// 
 			// 桁0ToolStripMenuItem
 			// 
 			this.桁0ToolStripMenuItem.Name = "桁0ToolStripMenuItem";
-			this.桁0ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.桁0ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.桁0ToolStripMenuItem.Text = "0桁(&N)";
 			this.桁0ToolStripMenuItem.Click += new System.EventHandler(this.桁0ToolStripMenuItem_Click);
 			// 
 			// 桁10ToolStripMenuItem
 			// 
 			this.桁10ToolStripMenuItem.Name = "桁10ToolStripMenuItem";
-			this.桁10ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.桁10ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.桁10ToolStripMenuItem.Text = "10桁";
 			this.桁10ToolStripMenuItem.Click += new System.EventHandler(this.桁10ToolStripMenuItem_Click);
 			// 
 			// 桁30ToolStripMenuItem
 			// 
 			this.桁30ToolStripMenuItem.Name = "桁30ToolStripMenuItem";
-			this.桁30ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.桁30ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.桁30ToolStripMenuItem.Text = "30桁(&D)";
 			this.桁30ToolStripMenuItem.Click += new System.EventHandler(this.桁30ToolStripMenuItem_Click);
 			// 
 			// 桁100ToolStripMenuItem
 			// 
 			this.桁100ToolStripMenuItem.Name = "桁100ToolStripMenuItem";
-			this.桁100ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.桁100ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.桁100ToolStripMenuItem.Text = "100桁";
 			this.桁100ToolStripMenuItem.Click += new System.EventHandler(this.桁100ToolStripMenuItem_Click);
 			// 
 			// 桁300ToolStripMenuItem
 			// 
 			this.桁300ToolStripMenuItem.Name = "桁300ToolStripMenuItem";
-			this.桁300ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.桁300ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.桁300ToolStripMenuItem.Text = "300桁";
 			this.桁300ToolStripMenuItem.Click += new System.EventHandler(this.桁300ToolStripMenuItem_Click);
 			// 
 			// 桁1000ToolStripMenuItem
 			// 
 			this.桁1000ToolStripMenuItem.Name = "桁1000ToolStripMenuItem";
-			this.桁1000ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+			this.桁1000ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
 			this.桁1000ToolStripMenuItem.Text = "1000桁";
 			this.桁1000ToolStripMenuItem.Click += new System.EventHandler(this.桁1000ToolStripMenuItem_Click);
 			// 
@@ -341,13 +341,13 @@
 			this.計算PToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.中止AToolStripMenuItem});
 			this.計算PToolStripMenuItem.Name = "計算PToolStripMenuItem";
-			this.計算PToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
+			this.計算PToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
 			this.計算PToolStripMenuItem.Text = "計算(&K)";
 			// 
 			// 中止AToolStripMenuItem
 			// 
 			this.中止AToolStripMenuItem.Name = "中止AToolStripMenuItem";
-			this.中止AToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+			this.中止AToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
 			this.中止AToolStripMenuItem.Text = "中止_Process.Kill(&K)";
 			this.中止AToolStripMenuItem.Click += new System.EventHandler(this.中止AToolStripMenuItem_Click);
 			// 
@@ -357,20 +357,20 @@
             this.単位の変換UToolStripMenuItem,
             this.日付の計算DToolStripMenuItem});
 			this.ツールTToolStripMenuItem.Name = "ツールTToolStripMenuItem";
-			this.ツールTToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+			this.ツールTToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
 			this.ツールTToolStripMenuItem.Text = "ツール(&T)";
 			// 
 			// 単位の変換UToolStripMenuItem
 			// 
 			this.単位の変換UToolStripMenuItem.Name = "単位の変換UToolStripMenuItem";
-			this.単位の変換UToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+			this.単位の変換UToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
 			this.単位の変換UToolStripMenuItem.Text = "単位の変換(&U)";
 			this.単位の変換UToolStripMenuItem.Click += new System.EventHandler(this.単位の変換UToolStripMenuItem_Click);
 			// 
 			// 日付の計算DToolStripMenuItem
 			// 
 			this.日付の計算DToolStripMenuItem.Name = "日付の計算DToolStripMenuItem";
-			this.日付の計算DToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+			this.日付の計算DToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
 			this.日付の計算DToolStripMenuItem.Text = "日付の計算(&D)";
 			this.日付の計算DToolStripMenuItem.Click += new System.EventHandler(this.日付の計算DToolStripMenuItem_Click);
 			// 
@@ -378,16 +378,16 @@
 			// 
 			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Status});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 463);
+			this.statusStrip1.Location = new System.Drawing.Point(0, 464);
 			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(377, 23);
+			this.statusStrip1.Size = new System.Drawing.Size(377, 22);
 			this.statusStrip1.TabIndex = 36;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
 			// Status
 			// 
 			this.Status.Name = "Status";
-			this.Status.Size = new System.Drawing.Size(28, 18);
+			this.Status.Size = new System.Drawing.Size(27, 17);
 			this.Status.Text = "----";
 			// 
 			// FigA
@@ -882,6 +882,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainWin";
+			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
 			this.Text = "電卓";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWin_FormClosing);
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainWin_FormClosed);

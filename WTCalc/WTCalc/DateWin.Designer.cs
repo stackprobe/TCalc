@@ -532,6 +532,7 @@
 			this.Controls.Add(this.MainTab);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "DateWin";
+			this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "日付の計算";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DateWin_FormClosed);

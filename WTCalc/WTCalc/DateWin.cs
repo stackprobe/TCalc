@@ -19,6 +19,8 @@ namespace WTCalc
 		{
 			InitializeComponent();
 
+			this.MinimumSize = this.Size;
+
 			this.RTMDateX2 = new RichTextMan(this.OutputDateX2);
 			this.RTMDateX1 = new RichTextMan(this.OutputDateX1);
 
