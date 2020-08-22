@@ -85,7 +85,7 @@ namespace WTCalc
 			rtb.SelectionLength = rtb.Text.Length;
 			rtb.SelectionProtected = true;
 
-			using (new FreezeUi(this.Rtb))
+			using (new UISuspend(this.Rtb))
 			{
 				this.Rtb.Rtf = rtb.SelectedRtf;
 				this.Rtb.SelectionStart = this.Rtb.Text.Length;

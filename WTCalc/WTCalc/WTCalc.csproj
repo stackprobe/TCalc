@@ -62,7 +62,6 @@
     <Compile Include="Calc.cs" />
     <Compile Include="DateData.cs" />
     <Compile Include="FileTools.cs" />
-    <Compile Include="FreezeUi.cs" />
     <Compile Include="GlobalProcMtx.cs" />
     <Compile Include="IntTools.cs" />
     <Compile Include="Keisan2.cs" />
@@ -89,6 +88,7 @@
     <Compile Include="SystemTools.cs" />
     <Compile Include="Keisan.cs" />
     <Compile Include="TCalcBase.cs" />
+    <Compile Include="UISuspend.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitTh.cs" />
     <Compile Include="UnitWin.cs">
