@@ -7,7 +7,7 @@
 ビルド済み配布物
 ----------------
 
-http://stackprobe.dip.jp/TCalc
+http://stackprobe.ccsp.mydns.jp/TCalc
 
 
 マニュアル
