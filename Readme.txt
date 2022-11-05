@@ -13,5 +13,5 @@ http://stackprobe.ccsp.mydns.jp/TCalc
 マニュアル
 ----------
 
-https://github.com/stackprobe/TCalc/blob/master/doc/Readme.txt
+https://github.com/stackprobe/TCalc/blob/master/doc/_Readme.txt
 
